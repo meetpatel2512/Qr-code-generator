@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Qr Code generator</h1>
+    <div class="container">
+        <div class="frame">
+            <div class="head">
+                <input type="text" name="qrcodename" id="text" placeholder="write your id here..." class="text">
+                <select>
+                    <option value="instgram" id="insta">instgram</option>
+                    <option value="github" id="git">github</option>
+                    <option value="linkedin" id="linkedin">linkedin</option>
+                    <option value="twitter" id="twitter">twitter</option>
+                    <option value="tread" id="threads">thread</option>
+                </select>
+            </div>
+            <div class="qrcode">
+                <img src="" alt="qrcode">
+                <h1>Scan me</h1>
+            </div>
+            <div class="nav">
+                <input type="submit" value="Generate" id="generate" class="btn">
+                <input type="submit" value="Download" id="download" class="btn">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
