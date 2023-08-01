@@ -32,14 +32,7 @@ generate.addEventListener('click', code = () => {
 
     }
     else if (option.value === "twitter") {
-        const url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${"twitter.com/@" + text.value}`
-        image.src = url;
-        document.querySelector('.qrcode').style.backgroundColor = "white"
-        document.querySelector('.qrcode h1').style.color = "black"
-
-    }
-    else if (option.value === "threads") {
-        const url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${"threads.com/@" + text.value}`
+        const url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${"twitter.com/" + text.value}`
         image.src = url;
         document.querySelector('.qrcode').style.backgroundColor = "white"
         document.querySelector('.qrcode h1').style.color = "black"
